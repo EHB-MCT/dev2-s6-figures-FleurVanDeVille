@@ -1,4 +1,8 @@
 "use strict";
+
+import Figure from "./Figure.js";
+import Rectangle from "./Rectangle.js";
+
 //import Figure from './Figure.js';
 //import Circle from './Circle.js';
 //import Rectangle from './Rectangle.js';
@@ -10,6 +14,9 @@ const form = {
     },
     init() {
         console.log('Form init!');
+
+        const rect = new Rectangle("name", 20, 10);
+        console.log(rect);
     },
     inputElementsWithLabel(label, id) {
 
